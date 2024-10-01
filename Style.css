@@ -22,7 +22,7 @@
 
 body {
     color: var(--text-color);
-    background: var(--bg-color)
+    background: var(--bg-color);
 }
 
 header {
@@ -82,7 +82,6 @@ span {
     border-radius: 8px;
     font-size: 13px;
     transition: all .50s ease;
-
 }
 
 .h-btn:hover {
@@ -440,7 +439,7 @@ form .send-btn:hover {
     font-size: 27px;
 }
 
-@media (max-width : 1700px) {
+@media(max-width: 1700px) {
     header {
         padding: 20px 8%;
     }
@@ -462,7 +461,7 @@ form .send-btn:hover {
     }
 }
 
-@media (max-width : 1380px) {
+@media(max-width: 1380px) {
     header {
         padding: 20px 5%;
     }
@@ -472,21 +471,21 @@ form .send-btn:hover {
     }
 
     section {
-        padding: 90px 8% 80px;
+        padding: 90px 5% 80px;
     }
 
     .footer {
-        padding: 18px 5%px;
+        padding: 18px 5%;
     }
 
     .hero {
         height: 90vh;
         background-position: center;
+        width: 100%;
     }
 }
 
-
-@media (max-width : 1290px) {
+@media(max-width: 1290px) {
     .box {
         padding: 40px 40px 46px;
     }
@@ -497,12 +496,12 @@ form .send-btn:hover {
         max-width: 60px;
     }
 
-    box h3 {
+    .box h3 {
         font-size: 21px;
     }
 }
 
-@media (max-width : 1240px) {
+@media(max-width: 1240px) {
     .about {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -526,9 +525,9 @@ form .send-btn:hover {
     }
 }
 
-@media (max-width : 950px) {
+@media (max-width: 950px) {
     :root {
-        --h1-font: 3.5rem;
+        --h1-font: 3rem;
     }
 
     .social {
@@ -557,7 +556,7 @@ form .send-btn:hover {
         font-size: 22px;
     }
 
-    .navlist top-btnn {
+    .navlist.top-btnn {
         font-size: 17px;
     }
 
@@ -566,29 +565,35 @@ form .send-btn:hover {
     }
 }
 
-@media (max-width : 680px) {
+@media(max-width: 680px) {
     .main-content p {
         width: 100%;
     }
 }
 
-@media (max-width : 470px) {
+@media(max-width: 470px) {
     :root {
-        --h1-font: 2rem;
-        --h2-font: 1rem;
+        --h1-font: 1.5rem;
+        --h2-font: 1.5rem;
+        width: 100%;
     }
-
-
 
     .about-img img {
         text-align: center;
         width: 100%;
-        height: 300px;
-        max-width: 300px;
+        height: 250px;
+        max-width: 250px;
         border-radius: 50%;
         object-fit: cover;
         margin: 0 auto;
     }
+
+    .exp-area p {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 42px;
+}
 
     form .send-btn {
         width: 30%;
@@ -606,5 +611,40 @@ form .send-btn:hover {
         font-size: 8px;
         transition: all .50s ease;
     }
+}
 
+
+@media(max-width: 320px) {
+    :root {
+        --h1-font: 2rem;
+        --h2-font: 1rem;
+        width: 154%;
+    }
+
+    header {
+        padding: 20px 3%;
+    }
+
+    header .sticky {
+        padding: 14px 1%;
+    }
+
+    section {
+        padding: 90px 1% 80px;
+    }
+
+    .footer {
+        padding: 18px 1%;
+    }
+
+    .hero {
+        height: 90vh;
+        background-position: center;
+
+    }
+
+    section{
+        padding: 10px 10% 10px;
+    }
+    
 }
