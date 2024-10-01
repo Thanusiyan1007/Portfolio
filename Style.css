@@ -574,7 +574,7 @@ form .send-btn:hover {
 @media(max-width: 470px) {
     :root {
         --h1-font: 1.5rem;
-        --h2-font: 1.5rem;
+        --h2-font: 1rem;
         width: 100%;
     }
 
@@ -611,8 +611,12 @@ form .send-btn:hover {
         font-size: 8px;
         transition: all .50s ease;
     }
-}
 
+    header.sticky {
+        background: var(--bg-color);
+        box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .2);
+    }
+}
 
 @media(max-width: 320px) {
     :root {
@@ -645,6 +649,17 @@ form .send-btn:hover {
 
     section{
         padding: 10px 10% 10px;
+    }
+
+    .h-btn {
+        display: inline-block;
+        padding: 11px 26px;
+        background: transparent;
+        color: var(--main-color);
+        border: 2px solid var(--main-color);
+        border-radius: 8px;
+        font-size: 10px;
+        transition: all .50s ease;
     }
     
 }
