@@ -574,9 +574,11 @@ form .send-btn:hover {
 
 @media (max-width : 470px) {
     :root {
-        --h1-font: 2.4rem;
-        --h2-font: 1.5rem;
+        --h1-font: 2rem;
+        --h2-font: 1rem;
     }
+
+
 
     .about-img img {
         text-align: center;
