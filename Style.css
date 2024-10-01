@@ -569,6 +569,11 @@ form .send-btn:hover {
     .main-content p {
         width: 100%;
     }
+
+    header.sticky {
+        background: var(--bg-color);
+        box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .2);
+    }
 }
 
 @media(max-width: 470px) {
